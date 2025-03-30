@@ -7,7 +7,7 @@ const BlogItemm = ({ blog }: { blog: BlogItem }) => {
   return (
     <div className="border border-gray-3 bg-white rounded-xl px-4 flex  gap-6 sm:px-3 py-3">
       <Link href="/blogs/blog-details" className="rounded-md overflow-hidden">
-        <img
+        <Image
           src="https://placehold.co/337x280/png"
           alt="blog"
           className="rounded-md w-[637px] h-full "

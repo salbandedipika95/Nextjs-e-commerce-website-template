@@ -24,7 +24,7 @@ const Error = () => {
               </h2>
 
               <p className="max-w-[410px] w-full mx-auto mb-7.5">
-              Sorry, we couldn't find the page you where looking for. We suggest that you return to homepage.
+              Sorry, we couldn&apos;t find the page you where looking for. We suggest that you return to homepage.
               </p>
 
               <Link

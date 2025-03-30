@@ -1,6 +1,7 @@
 import React from "react";
 import Breadcrumb from "../Common/Breadcrumb";
 import bgImage from "./bgimg.png";
+import Image from "next/image";
 
 const Contact = () => {
   return (
@@ -12,7 +13,7 @@ const Contact = () => {
           <div className="flex flex-col xl:flex-row gap-7.5">
             <div className="xl:max-w-[370px] w-full bg-white rounded-xl shadow-1">
               <div className="p-7.5 sm:px-7.5">
-                <img src={bgImage.src} alt="" />
+                <Image src={bgImage.src} alt=""/>
               </div>
 
               <div className=" p-4 sm:px-7.5 ">
