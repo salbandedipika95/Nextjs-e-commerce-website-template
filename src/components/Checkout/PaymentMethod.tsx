@@ -4,7 +4,7 @@ import Image from "next/image";
 const PaymentMethod = () => {
   const [payment, setPayment] = useState("bank");
   return (
-    <div className="bg-white shadow-1 rounded-[10px] mt-7.5">
+    <div className="bg-gray-2 shadow-1 rounded-[10px] mt-7.5">
       <div className="border-b border-gray-3 py-5 px-4 sm:px-8.5">
         <h3 className="font-medium text-xl text-dark">Payment Method</h3>
       </div>
@@ -26,7 +26,7 @@ const PaymentMethod = () => {
               <div
                 className={`flex h-4 w-4 items-center justify-center rounded-full ${
                   payment === "bank"
-                    ? "border-4 border-blue"
+                    ? "border-4 border-[#E53E3E]"
                     : "border border-gray-4"
                 }`}
               ></div>
@@ -66,7 +66,7 @@ const PaymentMethod = () => {
               <div
                 className={`flex h-4 w-4 items-center justify-center rounded-full ${
                   payment === "cash"
-                    ? "border-4 border-blue"
+                    ? "border-4 border-[#E53E3E]"
                     : "border border-gray-4"
                 }`}
               ></div>
@@ -106,7 +106,7 @@ const PaymentMethod = () => {
               <div
                 className={`flex h-4 w-4 items-center justify-center rounded-full ${
                   payment === "paypal"
-                    ? "border-4 border-blue"
+                    ? "border-4 border-[#E53E3E]"
                     : "border border-gray-4"
                 }`}
               ></div>

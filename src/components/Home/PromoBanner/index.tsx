@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const PromoBanner = () => {
   return (
-    <section className="overflow-hidden py-20">
-      <div className="max-w-[1170px] w-full flex justify-between mx-auto px-4 sm:px-8 xl:px-0">
-        {/* <!-- promo banner big --> */}
+    <section className="overflow-hidden py-10 sm:py-16 md:py-20">
+      <div className="max-w-7xl w-full flex flex-col lg:flex-row gap-6 mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Large Promo Banner */}
         <div
-          className="relative z-1 overflow-hidden rounded-lg  py-12.5 lg:py-17.5 xl:py-10 px-4 sm:px-6 lg:px-6 xl:pl-8 xl:pr-27"
+          className="relative z-1 overflow-hidden rounded-lg py-10 px-6 md:px-8 lg:py-14 xl:py-16 w-full lg:w-2/3"
           style={{
             backgroundImage: `url(/images/promo/bgimg-1.png)`,
             backgroundSize: "cover",
@@ -15,39 +15,37 @@ const PromoBanner = () => {
             backgroundRepeat: "no-repeat",
           }}
         >
-          <div className="max-w-[550px] w-full">
-            <button className="inline-flex font-medium cursor-default text-custom-xs text-[#E53E3E]  bg-white py-[6px] px-5 rounded-md ease-out duration-200  mb-4">
+          <div className="max-w-md">
+            <button className="inline-flex font-medium cursor-default text-xs text-red-600 bg-white py-1 px-3 rounded-md mb-4">
               1500+ PRODUCTS
             </button>
-
-            <h2 className="font-bold text-lg lg:text-heading-6 xl:text-heading-6 text-dark mb-3">
+            <h2 className="font-bold text-lg md:text-xl lg:text-2xl text-dark mb-3">
               WOMEN COLLECTIONS
             </h2>
-            <span className="block  text-base  mb-4">
-              This is genuinely the first theme i bought for which i did not had{" "}
-              <br />
-              to write one line of code.
+            <span className="block text-sm md:text-base mb-4">
+              This is genuinely the first theme I bought for which I did not have to write one line of code.
             </span>
-            <ul className="flex flex-col gap-2.5">
-              <li className="text-dark">Blazer</li>
-              <li className="text-dark">Blouse & Shirts</li>
-              <li className="text-dark">Dresser</li>
-              <li className="text-dark">Jeans</li>
-              <li className="text-dark">Knits</li>
-              <li className="text-dark">Pants</li>
-              <li className="text-dark">Skirts</li>
-              <li className="text-dark">Suits</li>
-              <li className="text-dark">SweatShirts & Hoodie</li>
-              <li className="text-dark">T-shirts</li>
-              <li className="text-dark">Tops & Bodysuits</li>
+            <ul className="grid grid-cols-2 gap-2 text-sm text-dark">
+              <li>Blazer</li>
+              <li>Blouse & Shirts</li>
+              <li>Dresses</li>
+              <li>Jeans</li>
+              <li>Knits</li>
+              <li>Pants</li>
+              <li>Skirts</li>
+              <li>Suits</li>
+              <li>Sweatshirts & Hoodies</li>
+              <li>T-shirts</li>
+              <li>Tops & Bodysuits</li>
             </ul>
           </div>
         </div>
 
-        <div className="grid gap-4 grid-rows-1 g:grid-rows-2">
-          {/* <!-- promo banner small --> */}
+        {/* Small Promo Banners */}
+        <div className="grid gap-6 w-full lg:w-1/3">
+          {/* Men's Collection */}
           <div
-            className="relative z-1 w-full overflow-hidden rounded-lg  py-8 xl:py-12 pr-16 pl-10 sm:pr-20 xl:pr-67"
+            className="relative z-1 w-full overflow-hidden rounded-lg py-8 px-6 md:px-8"
             style={{
               backgroundImage: `url(/images/promo/bgimg-2.png)`,
               backgroundSize: "cover",
@@ -55,27 +53,21 @@ const PromoBanner = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <div className="">
-              <button className="inline-flex cursor-default font-medium text-custom-xs text-[#E53E3E]  bg-white py-[6px] px-5 rounded-md ease-out duration-200  mb-4">
-                1500+ PRODUCTS
-              </button>
-
-              <h2 className="font-bold text-lg lg:text-heading-6 xl:text-heading-6 text-dark mb-3">
-                MEN COLLECTIONS
-              </h2>
-
-              <ul className="flex flex-col gap-2.5">
-                <li className="text-dark">Blazer</li>
-                <li className="text-dark">Blouse & Shirts</li>
-                <li className="text-dark">Dresser</li>
-                <li className="text-dark">Jeans</li>
-              </ul>
-            </div>
+            <button className="inline-flex cursor-default font-medium text-xs text-red-600 bg-white py-1 px-3 rounded-md mb-4">
+              1500+ PRODUCTS
+            </button>
+            <h2 className="font-bold text-lg md:text-xl text-dark mb-3">MEN COLLECTIONS</h2>
+            <ul className="grid grid-cols-2 gap-2 text-sm text-dark">
+              <li>Blazer</li>
+              <li>Blouse & Shirts</li>
+              <li>Dresses</li>
+              <li>Jeans</li>
+            </ul>
           </div>
 
-          {/* <!-- promo banner small --> */}
+          {/* Accessories Collection */}
           <div
-            className="relative z-1 w-full overflow-hidden rounded-lg  py-8 xl:py-12 pr-16 pl-10 sm:pr-20 xl:pr-56 "
+            className="relative z-1 w-full overflow-hidden rounded-lg py-8 px-6 md:px-8"
             style={{
               backgroundImage: `url(/images/promo/bgimg-3.png)`,
               backgroundSize: "cover",
@@ -83,22 +75,18 @@ const PromoBanner = () => {
               backgroundRepeat: "no-repeat",
             }}
           >
-            <div className="">
-              <button className="inline-flex font-medium cursor-default text-custom-xs text-[#E53E3E]  bg-white py-[6px] px-5 rounded-md ease-out duration-200  mb-4">
-                1500+ PRODUCTS
-              </button>
-
-              <h2 className="font-bold uppercase text-lg lg:text-heading-6 xl:text-heading-6 text-dark mb-3">
-                Top Accessories
-              </h2>
-
-              <ul className="flex flex-col gap-2.5">
-                <li className="text-dark">Blazer</li>
-                <li className="text-dark">Blouse & Shirts</li>
-                <li className="text-dark">Dresser</li>
-                <li className="text-dark">Jeans</li>
-              </ul>
-            </div>
+            <button className="inline-flex font-medium cursor-default text-xs text-red-600 bg-white py-1 px-3 rounded-md mb-4">
+              1500+ PRODUCTS
+            </button>
+            <h2 className="font-bold uppercase text-lg md:text-xl text-dark mb-3">
+              Top Accessories
+            </h2>
+            <ul className="grid grid-cols-2 gap-2 text-sm text-dark">
+              <li>Blazer</li>
+              <li>Blouse & Shirts</li>
+              <li>Dresses</li>
+              <li>Jeans</li>
+            </ul>
           </div>
         </div>
       </div>

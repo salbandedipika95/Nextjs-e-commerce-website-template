@@ -8,19 +8,19 @@ const Contact = () => {
     <>
       <Breadcrumb title={"Contact"} pages={["contact"]} />
 
-      <section className="overflow-hidden py-20 bg-gray-2">
+      <section className="overflow-hidden py-20 bg-white">
         <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
           <div className="flex flex-col xl:flex-row gap-7.5">
-            <div className="xl:max-w-[370px] w-full bg-white rounded-xl shadow-1">
+            <div className="xl:max-w-[370px] w-full bg-gray-1 rounded-xl shadow-1">
               <div className="p-7.5 sm:px-7.5">
-                <Image src={bgImage.src} alt=""/>
+                <Image src={bgImage.src} alt="" width={500} height={300} />
               </div>
 
-              <div className=" p-4 sm:px-7.5 ">
+              <div className=" p-4 px-7.5 ">
                 <p className="font-medium text-xl text-dark">Clothing Store</p>
               </div>
 
-              <div className="pb-6 sm:px-7.5">
+              <div className="pb-6 px-7.5">
                 <div className="flex flex-col gap-4">
                   <p className="flex gap-4">
                     <svg
@@ -88,11 +88,11 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
-              <div className="px-5 py-6 sm:px-7.5 border-t border-gray-3">
+              <div className="py-6 px-7.5 border-t border-gray-3">
                 <p className="font-medium text-xl text-dark">Opening Hours</p>
               </div>
 
-              <div className="px-4 sm:px-7.5">
+              <div className="px-7.5 pb-7.5">
                 <div className="flex flex-col gap-2">
                   <p className="flex ">Monday - Friday : 9am - 5pm</p>
 
@@ -101,7 +101,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div className="xl:max-w-[770px] w-full bg-white rounded-xl shadow-1 p-4 sm:p-7.5 xl:p-10">
+            <div className="xl:max-w-[770px] w-full bg-gray-1 rounded-xl shadow-1 p-4 sm:p-7.5 xl:p-10">
               <div className="pb-5 ">
                 <p className="font-medium text-2xl text-dark">Get In Touch</p>
               </div>
@@ -117,7 +117,7 @@ const Contact = () => {
                       name="firstName"
                       id="firstName"
                       placeholder="Jhon"
-                      className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+                      className="rounded-md border border-gray-3 bg-white placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
                     />
                   </div>
 
@@ -131,7 +131,7 @@ const Contact = () => {
                       name="emiladdress"
                       id="emiladdress"
                       placeholder="deo@gmail.com"
-                      className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+                      className="rounded-md border border-gray-3 bg-white placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
                     />
                   </div>
                 </div>
@@ -147,7 +147,7 @@ const Contact = () => {
                       name="subject"
                       id="subject"
                       placeholder="Type your subject"
-                      className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+                      className="rounded-md border border-gray-3 bg-white placeholder:text-dark-5 w-full py-2.5 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
                     />
                   </div>
                 </div>
@@ -162,7 +162,7 @@ const Contact = () => {
                     id="message"
                     rows={4}
                     placeholder="Type your message"
-                    className="rounded-md border border-gray-3 bg-gray-1 placeholder:text-dark-5 w-full p-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+                    className="rounded-md border border-gray-3 bg-white placeholder:text-dark-5 w-full p-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
                   ></textarea>
                 </div>
 

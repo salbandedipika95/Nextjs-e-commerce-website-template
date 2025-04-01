@@ -43,7 +43,7 @@ const BlogGridWithSidebar = () => {
 
       <section className="overflow-hidden py-20 bg-white">
         <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
-          <div className="flex flex-col lg:flex-row gap-7.5">
+          <div className="flex flex-col-reverse lg:flex-row  gap-7.5">
             {/* <!-- blog grid --> */}
             <div className="lg:max-w-[770px] w-full">
               <div className="grid grid-cols-1 sm:grid-cols-1 gap-y-10 gap-x-7.5">
@@ -142,37 +142,37 @@ const BlogGridWithSidebar = () => {
 
                 <div className="p-4 sm:p-6">
                   <div className="flex flex-col gap-3">
-                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-blue">
+                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-[#E53E3E]">
                       Latest News
-                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-blue">
+                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-[#E53E3E]">
                         12
                       </span>
                     </button>
 
-                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-blue">
+                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-[#E53E3E]">
                       Today Best Posts
-                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-blue">
+                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-[#E53E3E]">
                         25
                       </span>
                     </button>
 
-                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-blue">
+                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-[#E53E3E]">
                       Design Trend
-                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-blue">
+                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-[#E53E3E]">
                         23
                       </span>
                     </button>
 
-                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-blue">
+                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-[#E53E3E]">
                       UI/UX Tips
-                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-blue">
+                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-[#E53E3E]">
                         09
                       </span>
                     </button>
 
-                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-blue">
+                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-[#E53E3E]">
                       Brand Design
-                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-blue">
+                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-[#E53E3E]">
                         54
                       </span>
                     </button>

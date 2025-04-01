@@ -34,13 +34,16 @@ const CounDown = () => {
   return (
     <section className="overflow-hidden pb-20">
       <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
-        <div className="relative overflow-hidden flex justify-between z-1 rounded-lg bg-[#D0E9F3] p-4 sm:p-7.5 lg:p-10 xl:p-15" style={{
-          backgroundImage: `url(/images/countdown/bgimg.png)`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }} >
-          <div className="max-w-[422px] w-full mt-10">
+        <div
+          className="relative overflow-hidden flex justify-between lg:flex-row flex-col z-1 rounded-lg bg-[#D0E9F3] p-4 sm:p-7.5 lg:p-10 xl:p-15 "
+          style={{
+            backgroundImage: `url(/images/countdown/bgimg.png)`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        >
+          <div className="max-w-[422px] lg:mb-0 mb-16 w-full mt-10">
             <h2 className="font-semibold  mb-3.5 uppercase text-xl xl:text-heading-4 text-dark">
               Deal Of the days
             </h2>

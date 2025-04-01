@@ -131,10 +131,10 @@ const ShopWithSidebar = () => {
       />
       <section className="overflow-hidden relative pb-20 pt-5 lg:pt-20 xl:pt-28 bg-white">
         <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
-          <div className="flex flex-row-reverse gap-7.5">
+          <div className="flex sm:flex-row-reverse flex-col-reverse gap-7.5">
             {/* <!-- Sidebar Start --> */}
             <div
-              className={`sidebar-content fixed xl:z-1 z-9999 left-0 top-0 xl:translate-x-0 xl:static max-w-[310px] xl:max-w-[270px] w-full ease-out duration-200 ${
+              className={`sidebar-content xl:z-1 z-99 left-0 top-0 translate-x-0 static max-w-full sm:max-w-[270px] w-full ease-out duration-200 ${
                 productSidebar
                   ? "translate-x-0 bg-white p-5 h-screen overflow-y-auto"
                   : "-translate-x-full"

@@ -16,29 +16,21 @@ const Newsletter = () => {
           /> */}
           <div className="absolute -z-1 max-w-[523px] max-h-[243px] w-full h-full right-0 top-0 bg-gradient-1"></div>
 
-          <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 px-4 sm:px-7.5 xl:pl-12.5 xl:pr-14 py-11">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-8 px-4 sm:px-7.5 xl:pl-12.5 xl:pr-14 py-11">
             <div className="max-w-[491px] w-full">
               <h2 className="max-w-[399px] text-white font-bold text-lg sm:text-xl xl:text-heading-4 mb-3">
-              -15% Off Discount
-              All Here
+                -15% Off Discount All Here
               </h2>
-              <p className="text-white">
-              Spring summer 22 women’s collection
-              </p>
+              <p className="text-white">Spring summer 22 women’s collection</p>
             </div>
 
-            <div className="w-full flex justify-end">
-            
-              
-                 
-                  <button
-                    type="submit"
-                    className="inline-flex justify-end py-3 px-7 text-[#E53E3E] bg-white font-medium rounded-sm ease-out duration-200 hover:bg-[#f34242]"
-                  >
-                   View Collections
-                  </button>
-              
-            
+            <div className="w-full flex justify-start sm:justify-end">
+              <button
+                type="submit"
+                className="inline-flex justify-end py-3 px-7 text-[#E53E3E] bg-white font-medium rounded-sm ease-out duration-200 hover:bg-[#f34242]"
+              >
+                View Collections
+              </button>
             </div>
           </div>
         </div>

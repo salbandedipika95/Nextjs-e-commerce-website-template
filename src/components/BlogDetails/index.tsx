@@ -11,7 +11,7 @@ const BlogDetails = () => {
   return (
     <>
       <Breadcrumb title={"Blog Details"} pages={["blog details"]} />
-      <section className="overflow-hidden py-20 bg-gray-2">
+      <section className="overflow-hidden py-20 bg-white">
         <div className="max-w-[1170px] w-full mx-auto px-4 sm:px-8 xl:px-0">
           <div className="flex flex-col lg:flex-row gap-7.5 xl:gap-12.5">
             {/* <!-- blog details --> */}
@@ -292,7 +292,7 @@ const BlogDetails = () => {
                             name="fullName"
                             id="fullName"
                             placeholder="Your Name"
-                            className="rounded-md border border-gray-3 bg-white placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+                            className="rounded-md border border-gray-3 bg-gray-2 placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
                           />
                         </div>
 
@@ -302,7 +302,7 @@ const BlogDetails = () => {
                             name="email"
                             id="email"
                             placeholder="Email Address"
-                            className="rounded-md border border-gray-3 bg-white placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+                            className="rounded-md border border-gray-3 bg-gray-2 placeholder:text-dark-5 w-full py-3 px-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
                           />
                         </div>
                       </div>
@@ -313,7 +313,7 @@ const BlogDetails = () => {
                           id="message"
                           rows={4}
                           placeholder="Your Reviews"
-                          className="rounded-md border border-gray-3 bg-white placeholder:text-dark-5 w-full p-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
+                          className="rounded-md border border-gray-3 bg-gray-2 placeholder:text-dark-5 w-full p-5 outline-none duration-200 focus:border-transparent focus:shadow-input focus:ring-2 focus:ring-blue/20"
                         ></textarea>
                       </div>
 
@@ -334,44 +334,44 @@ const BlogDetails = () => {
               {/* <!-- search box --> */}
               <SearchForm />
               {/* <!-- Popular Category box --> */}
-              <div className="shadow-1 bg-white rounded-xl mt-7.5">
+              <div className="border border-gray-3 bg-white rounded-xl mt-7.5">
                 <div className="px-4 sm:px-6 py-4.5 border-b border-gray-3">
                   <h2 className="font-medium text-lg text-dark">Categories</h2>
                 </div>
 
                 <div className="p-4 sm:p-6">
                   <div className="flex flex-col gap-3">
-                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-blue">
+                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-[#E53E3E]">
                       Latest News
-                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-blue">
+                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-[#E53E3E]">
                         12
                       </span>
                     </button>
 
-                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-blue">
+                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-[#E53E3E]">
                       Today Best Posts
-                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-blue">
+                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-[#E53E3E]">
                         25
                       </span>
                     </button>
 
-                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-blue">
+                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-[#E53E3E]">
                       Design Trend
-                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-blue">
+                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-[#E53E3E]">
                         23
                       </span>
                     </button>
 
-                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-blue">
+                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-[#E53E3E]">
                       UI/UX Tips
-                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-blue">
+                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-[#E53E3E]">
                         09
                       </span>
                     </button>
 
-                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-blue">
+                    <button className="group flex items-center justify-between ease-out duration-200 text-dark hover:text-[#E53E3E]">
                       Brand Design
-                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-blue">
+                      <span className="inline-flex rounded-[30px] bg-gray-2 text-custom-xs px-1.5 ease-out duration-200 group-hover:text-white group-hover:bg-[#E53E3E]">
                         54
                       </span>
                     </button>
@@ -382,7 +382,7 @@ const BlogDetails = () => {
               <LatestPosts blogs={blogData} />
 
               {/* <!-- Tags box --> */}
-              <div className="shadow-1 bg-white rounded-xl mt-7.5">
+              <div className="border border-gray-3 bg-white rounded-xl mt-7.5">
                 <div className="px-4 sm:px-6 py-4.5 border-b border-gray-3">
                   <h2 className="font-medium text-lg text-dark">Tags</h2>
                 </div>

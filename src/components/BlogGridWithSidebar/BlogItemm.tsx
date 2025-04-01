@@ -8,9 +8,11 @@ const BlogItemm = ({ blog }: { blog: BlogItem }) => {
     <div className="border border-gray-3 bg-white rounded-xl px-4 flex  gap-6 sm:px-3 py-3">
       <Link href="/blogs/blog-details" className="rounded-md overflow-hidden">
         <Image
-          src="https://placehold.co/337x280/png"
+          src="/images/blog/blogimg.png"
           alt="blog"
-          className="rounded-md w-[637px] h-full "
+          className="rounded-md "
+          width={637}
+          height={280}
         />
       </Link>
       <div className=" flex flex-col justify-center">

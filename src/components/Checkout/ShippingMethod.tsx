@@ -4,7 +4,7 @@ import Image from "next/image";
 const ShippingMethod = () => {
   const [shippingMethod, setShippingMethod] = useState("free");
   return (
-    <div className="bg-white shadow-1 rounded-[10px] mt-7.5">
+    <div className="bg-gray-2 rounded-[10px] mt-7.5">
       <div className="border-b border-gray-3 py-5 px-4 sm:px-8.5">
         <h3 className="font-medium text-xl text-dark">Shipping Method</h3>
       </div>
@@ -27,7 +27,7 @@ const ShippingMethod = () => {
               <div
                 className={`flex h-4 w-4 items-center justify-center rounded-full ${
                   shippingMethod === "free"
-                    ? "border-4 border-blue"
+                    ? "border-4 border-[#E53E3E]"
                     : "border border-gray-4"
                 }`}
               ></div>
@@ -50,7 +50,7 @@ const ShippingMethod = () => {
               <div
                 className={`flex h-4 w-4 items-center justify-center rounded-full ${
                   shippingMethod === "fedex"
-                    ? "border-4 border-blue"
+                    ? "border-4 border-[#E53E3E]"
                     : "border border-gray-4"
                 }`}
               ></div>
@@ -90,7 +90,7 @@ const ShippingMethod = () => {
               <div
                 className={`flex h-4 w-4 items-center justify-center rounded-full ${
                   shippingMethod === "dhl"
-                    ? "border-4 border-blue"
+                    ? "border-4 border-[#E53E3E]"
                     : "border border-gray-4"
                 }`}
               ></div>
