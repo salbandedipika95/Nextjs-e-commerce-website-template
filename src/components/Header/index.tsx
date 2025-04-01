@@ -166,17 +166,17 @@ const Header = () => {
             stickyMenu ? "py-3" : "py-3"
           }`}
         >
-          <div className="xl:w-auto flex-col sm:flex-row w-full flex sm:justify-between sm:items-center gap-5 sm:gap-10">
+          <div className="xl:w-auto  flex-col sm:flex-row w-full flex sm:justify-between sm:items-center gap-5 md:-gap-10 sm:gap-6">
             <Link className="flex-shrink-0" href="/">
               <Image
                 src="/images/logo/logo.svg"
                 alt="Logo"
-                width={149}
+                width={139}
                 height={36}
               />
             </Link>
 
-            <div className="max-w-[475px] w-full">
+            <div className="sm:max-w-[475px] w-full ">
               <form>
                 <div className="flex items-center">
                   <CustomSelect options={options} />
