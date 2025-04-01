@@ -1,6 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
+import { useRef } from "react";
+
 import CustomSelect from "./CustomSelect";
 import { menuData } from "./menuData";
 import { topMenuData } from "./menuData";
@@ -12,11 +14,15 @@ import { selectTotalPrice } from "@/redux/features/cart-slice";
 import { useCartModalContext } from "@/app/context/CartSidebarModalContext";
 import Image from "next/image";
 
+import { usePathname } from "next/navigation";
+
 const Header = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [navigationOpen, setNavigationOpen] = useState(false);
   const [stickyMenu, setStickyMenu] = useState(false);
   const { openCartModal } = useCartModalContext();
+  const sidebarRef = useRef(null);
+  const dropdownRef = useRef(null);
 
   const product = useAppSelector((state) => state.cartReducer.items);
   const totalPrice = useSelector(selectTotalPrice);
@@ -48,6 +54,23 @@ const Header = () => {
     { label: "Mouse", value: "6" },
     { label: "Tablet", value: "7" },
   ];
+
+  const [dropdownToggler, setDropdownToggler] = useState(false);
+  const pathUrl = usePathname();
+
+  const handleClickOutside = (event) => {
+    if (
+      (sidebarRef.current && sidebarRef.current.contains(event.target)) ||
+      (dropdownRef.current && dropdownRef.current.contains(event.target))
+    ) {
+      return; // Prevent closing when clicking inside sidebar or dropdown
+    }
+
+    setNavigationOpen(false); // Close sidebar when clicking outside
+  };
+  const handleMenuItemClick = () => {
+    setNavigationOpen(false); // Close sidebar on menu item click
+  };
 
   return (
     <header
@@ -86,21 +109,25 @@ const Header = () => {
               </nav>
             </div>
 
-            <div className="hidden xl:block">
-              <span className="text-white text-custom-sm">
+            <div className="block mx-auto">
+              <span className="text-white  text-custom-sm">
                 Free shipping for all orders of 150$
               </span>
             </div>
 
             {/* Submenu for small screens */}
             <div
+              ref={sidebarRef}
               className={`w-[288px] absolute right-4 top-full xl:static xl:w-auto h-0 xl:h-auto invisible xl:visible xl:flex items-center justify-between ${
                 navigationOpen &&
                 `!visible bg-transparent shadow-lg border border-gray-3 !h-auto max-h-[400px] overflow-y-scroll rounded-md p-5`
               }`}
             >
               <nav>
-                <ul className="flex xl:items-center flex-col text-custom-xs xl:flex-row gap-5 xl:gap-8">
+                <ul
+                  ref={dropdownRef}
+                  className="flex xl:items-center flex-col text-custom-xs xl:flex-row gap-5 xl:gap-8"
+                >
                   {subTopMenuData.map((menuItem, i) =>
                     menuItem.submenu ? (
                       <Dropdown
@@ -111,6 +138,7 @@ const Header = () => {
                     ) : (
                       <li
                         key={i}
+                        onClick={handleMenuItemClick}
                         className="group relative before:w-0 before:h-[3px] before:bg-[#E53E3E] before:absolute before:left-0 before:top-0 before:rounded-b-[3px]  before:ease-out before:duration-200 hover:before:w-full "
                       >
                         <Link
@@ -231,11 +259,11 @@ const Header = () => {
                     <Image
                       src="/images/svgs/product.svg"
                       alt="product-img"
-                      width={24}
-                      height={24}
+                      width={26}
+                      height={26}
                     />
 
-                    <span className="flex items-center justify-center font-medium text-2xs absolute -right-2 -top-2.5 bg-[#E53E3E] w-4.5 h-4.5 rounded-full text-white">
+                    <span className="flex items-center justify-center font-medium text-2xs absolute -right-2 -top-2.5 bg-[#E53E3E] w-4 h-4 rounded-full text-white">
                       {product.length}
                     </span>
                   </span>
@@ -300,7 +328,7 @@ const Header = () => {
           <div
             className={`w-[288px] absolute right-4 top-full xl:static xl:w-auto h-0 xl:h-auto invisible xl:visible xl:flex items-center justify-between ${
               navigationOpen &&
-              `!visible bg-dark shadow-lg border border-gray-3 !h-auto max-h-[400px] overflow-y-scroll  p-5`
+              `!visible bg-dark min-h-screen shadow-lg border border-gray-3 !h-auto max-h-[400px] overflow-y-scroll  p-5`
             }`}
           >
             <nav>

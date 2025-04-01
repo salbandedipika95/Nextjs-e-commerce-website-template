@@ -289,7 +289,7 @@ const Footer = () => {
               <button
                 id="search-btn"
                 aria-label="Search"
-                className="flex items-center font-medium text-sm text-white py-2 rounded-md px-4 justify-center absolute right-3 top-1/2 -translate-y-1/2 ease-in duration-200 hover:text-blue bg-[#E53E3E]"
+                className="flex items-center font-medium text-sm text-white py-2 rounded-md px-4 justify-center absolute right-3 top-1/2 -translate-y-1/2 ease-in duration-200 hover:bg-[#f05353] bg-[#E53E3E]"
               >
                 SUBSCRIBE
               </button>

@@ -27,7 +27,7 @@ const Newsletter = () => {
             <div className="w-full flex justify-start sm:justify-end">
               <button
                 type="submit"
-                className="inline-flex justify-end py-3 px-7 text-[#E53E3E] bg-white font-medium rounded-sm ease-out duration-200 hover:bg-[#f34242]"
+                className="inline-flex justify-end py-3 px-7 text-[#E53E3E] bg-white font-medium rounded-sm ease-out duration-200 hover:bg-dark hover:text-white"
               >
                 View Collections
               </button>

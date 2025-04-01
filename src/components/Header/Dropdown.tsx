@@ -8,6 +8,7 @@ const Dropdown = ({ menuItem, stickyMenu }) => {
 
   return (
     <li
+    
       onClick={() => setDropdownToggler(!dropdownToggler)}
       className={`group relative before:w-0 before:h-[3px] before:bg-[#E53E3E] before:absolute before:left-0 before:top-0 before:rounded-b-[3px] before:ease-out before:duration-200 hover:before:w-full ${
         pathUrl.includes(menuItem.title) && "before:!w-full"
