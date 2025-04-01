@@ -25,7 +25,7 @@ const Hero = () => {
                     <div className="flex gap-2 items-baseline">
                       <span className="flex items-center gap-3">
                         <span className="font-medium mb-2 text-xs text-red">
-                          UMMER 22 WOMEN'S COLLECTION
+                          UMMER 22 WOMEN&apos;S COLLECTION
                         </span>
                       </span>
                     </div>
